@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+
+/* reset */
+
+html, body, h1, h2, h3, nav, ul, li {
+    
+    padding: 0px;
+    margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    /* background: #f0f3f7; */
+    background: #fff;
+    font-family: 'Muli', sans-serif;
+    
+
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+input[type="file"] {
+    display: none;
+}
+
+.orange {
+    color: rgb(218, 162, 77);
+}
+.red {
+    color: rgb(224, 77, 77);
+}
+
+.orange:hover {
+    color: rgb(170, 117, 37);
+}
+.red:hover {
+    color: rgb(170, 35, 35);
+}
+
+.h3 {
+    padding: 10px; 
+    text-align: center;
+}
+
+.max-button {
+    max-height: 20px !important;
+}
+
+.hide {
+   pointer-events: none;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
